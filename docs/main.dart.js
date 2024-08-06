@@ -70407,7 +70407,7 @@ A.a1D.prototype={
 $0(){$.CK().u0(0,B.bi,B.cd)},
 $S:0}
 A.GE.prototype={
-L(a){var s,r,q=null,p=A.aml(A.al9(A.vC("assets/images/img_ai_new.png",B.dV,1/0,1/0)),A.ch(3e5,0)),o=t.w,n=A.bc(a,B.I,o).w
+L(a){var s,r,q=null,p=A.aml(A.al9(A.vC("assets/images/img_ai_new.PNG",B.dV,1/0,1/0)),A.ch(3e5,0)),o=t.w,n=A.bc(a,B.I,o).w
 n=!(n.a.a<=700)?B.wz:B.dG
 s=t.p
 n=A.a([n,A.ajg(B.OR,!0,!0,!0,!1)],s)

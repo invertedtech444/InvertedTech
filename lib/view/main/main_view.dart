@@ -19,7 +19,7 @@ class MainView extends StatelessWidget {
         child: Stack(
           children: [
           Image.asset(
-          'assets/images/img_ai_new.png',
+          'assets/images/img_ai_new.PNG',
           width: double.infinity,
           height: double.infinity,
           fit: BoxFit.cover,
