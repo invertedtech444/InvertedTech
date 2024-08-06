@@ -14,7 +14,7 @@ class SocialMediaIcon extends StatelessWidget {
       borderRadius: BorderRadius.circular(20),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: defaultPadding * 0.4),
-        child: SvgPicture.asset(icon,color: Colors.white,height: 15,width: 15,),
+        child: icon.contains('svg') ? SvgPicture.asset(icon,color: Colors.white,height: 15,width: 15,) : Image.asset(icon,height: 15,width: 15,),
       ),
     );
   }

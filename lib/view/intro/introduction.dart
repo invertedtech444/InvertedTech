@@ -17,7 +17,7 @@ class Introduction extends StatelessWidget {
           SizedBox(
             width: MediaQuery.sizeOf(context).width * 0.02,
           ),
-          if (!Responsive.isLargeMobile(context)) Visibility(visible:false,child: const SocialMediaIconList()),
+          if (!Responsive.isLargeMobile(context)) Visibility(visible:true,child: const SocialMediaIconList()),
           SizedBox(
             width: MediaQuery.sizeOf(context).width * 0.07,
           ),
