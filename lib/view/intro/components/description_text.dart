@@ -19,7 +19,7 @@ class AnimatedDescriptionText extends StatelessWidget {
             '   - Real-time detection and recognition of registered users.\n   - Compares captured facial data with stored records to \n   identify individuals.\n   - Supports various lighting conditions and environments \n   for robust recognition.\n   - Provides feedback to users during the recognition \n   process to ensure accuracy.\n   - Utilizes advanced algorithms to handle variations \n   in facial expressions and poses.',
             maxLines: 20,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(color: Colors.grey, wordSpacing: 2, fontSize: value),
+            style: TextStyle(color: Colors.white, wordSpacing: 2, fontSize: value),
           ),
         );
       },
