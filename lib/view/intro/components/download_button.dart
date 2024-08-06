@@ -10,8 +10,8 @@ class DownloadButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Coming soon...')));
-        //launchUrl(Uri.parse(''));
+        // ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Coming soon...')));
+        launchUrl(Uri.parse('https://drive.google.com/file/d/1EoQlg8i6avg37c8A60Za4PrclkqCQaMQ/view?usp=sharing'));
       },
       child: Container(
         alignment: Alignment.center,
