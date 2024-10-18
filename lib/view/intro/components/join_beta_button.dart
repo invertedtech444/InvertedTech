@@ -11,17 +11,17 @@ class DownloadButton extends StatelessWidget {
     return InkWell(
       onTap: () {
         // ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Coming soon...')));
-        launchUrl(Uri.parse('https://drive.google.com/file/d/1laFPAUaWVcTLNAfRYWZMMfpiC3Qc1p6K/view?usp=sharing'));
+        launchUrl(Uri.parse(''));
       },
       child: Container(
         alignment: Alignment.center,
         padding: const EdgeInsets.symmetric(vertical: defaultPadding/1.5,horizontal: defaultPadding*2),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-            boxShadow:const [
-              BoxShadow(color: Colors.blue,offset: Offset(0, -1),blurRadius: 5),
-              BoxShadow(color: Colors.red,offset: Offset(0, 1),blurRadius: 5),
-            ],
+          boxShadow:const [
+            BoxShadow(color: Colors.blue,offset: Offset(0, -1),blurRadius: 5),
+            BoxShadow(color: Colors.red,offset: Offset(0, 1),blurRadius: 5),
+          ],
           gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
@@ -34,7 +34,7 @@ class DownloadButton extends StatelessWidget {
         child: Row(
           children: [
             Text(
-              'Download APK',
+              'Join Beta Program',
               style: Theme.of(context).textTheme.labelSmall!.copyWith(
                   color: Colors.white,
                   letterSpacing: 1.2,

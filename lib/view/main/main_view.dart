@@ -14,7 +14,6 @@ class MainView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const CustomDrawer(),
       body: Center(
         child: Stack(
           children: [
@@ -26,18 +25,7 @@ class MainView extends StatelessWidget {
             ).animate().fadeIn(duration: 300.ms),
             Column(
               children: [
-                kIsWeb && !Responsive.isLargeMobile(context) ? const SizedBox(height:defaultPadding*2,) : const SizedBox(height:defaultPadding/2,),
-                Visibility(
-                  visible: false,
-                  maintainSize: true,
-                  maintainAnimation: true,
-                  maintainState: true,
-                  child: const SizedBox(
-                    height: 80,
-                    child: TopNavigationBar(),
-                  ),
-                ),
-                if(Responsive.isLargeMobile(context))  const Row(children: [Spacer(),NavigationButtonList(),Spacer()],),
+
                 Expanded(
                   flex: 9,
                   child: PageView(
