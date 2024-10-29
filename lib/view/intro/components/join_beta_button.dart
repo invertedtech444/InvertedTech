@@ -4,12 +4,13 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../res/constants.dart';
 
-class DownloadButton extends StatelessWidget {
-  const DownloadButton({super.key});
+class JoinBetaButton extends StatelessWidget {
+  const JoinBetaButton({super.key});
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
+
         // ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Coming soon...')));
         launchUrl(Uri.parse(''));
       },

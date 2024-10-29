@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/view/intro/components/join_beta_button.dart';
 import '../../../res/constants.dart';
 import '../../../view model/responsive.dart';
 import 'animated_texts_componenets.dart';
@@ -60,7 +61,13 @@ class IntroBody extends StatelessWidget {
               const SizedBox(
                 height: defaultPadding * 2,
               ),
-              const DownloadButton(),
+              const Row(
+                children: [
+                  DownloadButton(),
+                  SizedBox(width: defaultPadding,),
+                  JoinBetaButton(),
+                ],
+              ),
             ],
           ),
         ),
