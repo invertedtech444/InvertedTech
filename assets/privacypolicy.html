@@ -1,17 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
-import 'package:flutter_html/flutter_html.dart';
-
-class PrivacyPolicyScreen extends StatefulWidget {
-  const PrivacyPolicyScreen({super.key});
-
-  @override
-  _PrivacyPolicyScreenState createState() => _PrivacyPolicyScreenState();
-}
-
-class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
-  String privacyPolicyHtml = '''
-  <html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy Guidelines for Play Store Apps</title>
@@ -127,38 +116,11 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
 
         <h2>10. Contact Information</h2>
         <p>If you have any questions or concerns regarding this Privacy Policy, feel free to contact us at:</p>
-        <p>Email: [Your email address]</p>
+        <p>Email: InvertedTechnology@gmail.com</p>
     </main>
 
     <footer>
-        <p>© 2024 Inverted Technology. All Rights Reserved.</p>
+        <p>&copy; 2024 Inverted Technology. All Rights Reserved.</p>
     </footer>
-
-
-</body></html>
-  ''';
-
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   loadHtmlFromAsset();
-  // }
-  //
-  // Future<void> loadHtmlFromAsset() async {
-  //   String htmlString = await rootBundle.loadString('assets/privacypolicy.html');
-  //   setState(() {
-  //     privacyPolicyHtml = htmlString;
-  //   });
-  // }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
-        child: Html(
-          data: privacyPolicyHtml,
-        ) // Show a loader while loading
-      ),
-    );
-  }
-}
+</body>
+</html>
