@@ -1,20 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
-import 'package:flutter_html/flutter_html.dart';
-import 'package:flutter_portfolio/view/intro/components/combine_subtitle.dart';
 
-import '../../view model/responsive.dart';
-import '../intro/components/description_text.dart';
-
-class PrivacyPolicyScreen extends StatefulWidget {
-  const PrivacyPolicyScreen({super.key});
-
-  @override
-  _PrivacyPolicyScreenState createState() => _PrivacyPolicyScreenState();
-}
-
-class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
-  String privacyPolicyHtml = '''
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,9 +37,8 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: black;
+            color: #4CAF50;
             margin-top: 30px;
-            font-size: 1.5em;
         }
         p, ul {
             font-size: 1.1em;
@@ -69,7 +52,7 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
             margin-bottom: 10px;
         }
         footer {
-            background-color: #040614;
+            background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -82,6 +65,9 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
     </style>
 </head>
 <body>
+    <header>
+        <h1>Privacy Policy Guidelines</h1>
+    </header>
 
     <main>
         <h2>1. Introduction</h2>
@@ -150,38 +136,3 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
     </footer>
 </body>
 </html>
-  ''';
-
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   loadHtmlFromAsset();
-  // }
-  //
-  // Future<void> loadHtmlFromAsset() async {
-  //   String htmlString = await rootBundle.loadString('assets/privacypolicy.html');
-  //   setState(() {
-  //     privacyPolicyHtml = htmlString;
-  //   });
-  // }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Center(child: Container(
-              width: double.maxFinite,
-              padding: EdgeInsets.only(top: 20,bottom: 20),
-              color: Color(0xFF040614),
-                child: PrivacyPolicyText())),
-            Html(
-              data: privacyPolicyHtml,
-            ),
-          ],
-        ) // Show a loader while loading
-      ),
-    );
-  }
-}

@@ -81,3 +81,30 @@ class CombineSubtitleText extends StatelessWidget {
     );
   }
 }
+
+
+class PrivacyPolicyText extends StatelessWidget {
+  const PrivacyPolicyText({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return  ShaderMask(
+      shaderCallback: (bounds) {
+        return const LinearGradient(colors: [
+          Colors.blue,
+          Colors.pink,
+        ]).createShader(bounds);
+      },
+      child: const Responsive(
+        desktop: AnimatedPrivacyPolicyText(
+          start: 30, end: 40, text: 'Privacy Policy Guidelines',gradient: false, fontSize: 85,),
+        largeMobile: AnimatedPrivacyPolicyText(
+          start: 30, end: 25, text: 'Privacy Policy Guidelines',gradient: false,fontSize: 85,),
+        mobile: AnimatedPrivacyPolicyText(
+          start: 25, end: 20, text: 'Privacy Policy Guidelines',gradient: false,fontSize: 85,),
+        tablet: AnimatedPrivacyPolicyText(
+          start: 40, end: 30, text: 'Privacy Policy Guidelines',gradient: false,fontSize: 85,),
+      ),
+    );
+  }
+}
