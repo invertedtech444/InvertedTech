@@ -46,7 +46,6 @@ class AnimatedPrivacyPolicyText extends StatelessWidget {
       builder: (context, value, child) {
         return Text(
           text,
-          maxLines: 5,
           textAlign: TextAlign.center,
           style: Theme.of(context).textTheme.headlineLarge!.copyWith(
               color: Colors.white,

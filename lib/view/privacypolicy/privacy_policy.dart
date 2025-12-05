@@ -30,7 +30,7 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
             color: #333;
         }
         header {
-            background-color: #4CAF50;
+            background-color: #040614;
             padding: 20px;
             text-align: center;
             color: white;
@@ -83,6 +83,10 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
 </head>
 <body>
 
+    <header>
+        <h1>Privacy Policy Guidelines</h1>
+    </header>
+    
     <main>
         <h2>1. Introduction</h2>
         <p>At Inverted Technology, we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy outlines how our app collects, uses, and protects your information.</p>
@@ -152,24 +156,15 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
 </html>
   ''';
 
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   loadHtmlFromAsset();
-  // }
-  //
-  // Future<void> loadHtmlFromAsset() async {
-  //   String htmlString = await rootBundle.loadString('assets/privacypolicy.html');
-  //   setState(() {
-  //     privacyPolicyHtml = htmlString;
-  //   });
-  // }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
+        child: Html(
+          data: privacyPolicyHtml,
+        ),
+  /*      child: Column(
           children: [
             Center(child: Container(
               width: double.maxFinite,
@@ -180,7 +175,7 @@ class _PrivacyPolicyScreenState extends State<PrivacyPolicyScreen> {
               data: privacyPolicyHtml,
             ),
           ],
-        ) // Show a loader while loading
+        ) // Show a loader while loading*/
       ),
     );
   }

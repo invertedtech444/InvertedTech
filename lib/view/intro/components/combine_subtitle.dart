@@ -97,13 +97,13 @@ class PrivacyPolicyText extends StatelessWidget {
       },
       child: const Responsive(
         desktop: AnimatedPrivacyPolicyText(
-          start: 30, end: 40, text: 'Privacy Policy Guidelines',gradient: false, fontSize: 85,),
+          start: 30, end: 40, text: 'Privacy Policy Guidelines',gradient: false, fontSize: 80,),
         largeMobile: AnimatedPrivacyPolicyText(
-          start: 30, end: 25, text: 'Privacy Policy Guidelines',gradient: false,fontSize: 85,),
+          start: 30, end: 25, text: 'Privacy Policy Guidelines',gradient: false,fontSize: 80,),
         mobile: AnimatedPrivacyPolicyText(
-          start: 25, end: 20, text: 'Privacy Policy Guidelines',gradient: false,fontSize: 85,),
+          start: 25, end: 20, text: 'Privacy Policy Guidelines',gradient: false,fontSize: 75,),
         tablet: AnimatedPrivacyPolicyText(
-          start: 40, end: 30, text: 'Privacy Policy Guidelines',gradient: false,fontSize: 85,),
+          start: 40, end: 30, text: 'Privacy Policy Guidelines',gradient: false,fontSize: 80,),
       ),
     );
   }
